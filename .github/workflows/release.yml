@@ -2,10 +2,8 @@ name: goreleaser
 
 on:
   push:
-    paths-ignore:
-      - "*.md"
-      - ".gitignore"
-      - "LICENSE"
+    tags:
+      - '*'
 
 permissions:
   contents: write
