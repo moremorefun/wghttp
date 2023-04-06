@@ -2,9 +2,10 @@ name: goreleaser
 
 on:
   push:
-    # run only against tags
-    tags:
-      - '*'
+    paths-ignore:
+      - "*.md"
+      - ".gitignore"
+      - "LICENSE"
 
 permissions:
   contents: write
